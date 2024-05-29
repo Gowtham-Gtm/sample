@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        body{
+            font-size: large;
+        }
+        input{
+            font-size: large;
+        }
+        h1{
+            text-align: center;
+            font-size: 35px;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="#" method="post">
+        <h1>Contact Form</h1><br>
+        <label for="fn">First Name:</label><br>
+        <input type="text" id="fn" name="fn" required>
+        <br><br>
+        <label for="ln">Last Name:</label><br>
+        <input type="text" id="ln" name="ln" required>
+        <br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="pswd">Password:</label><br>
+        <input type="password" name="pswd" id="pswd" required>
+        <br><br>
+        <label for="Phone Number">phone Number:</label><br>
+        <input type="number" id="Phone Number" name="Phone Number" required>
+        <br><br>
+        <label for="dob">Date of Birth:</label><br>
+        <input style="width: 220px;" type="date" name="dob" id="dob">
+        <br><br>
+        <label for="pic">Your Photo:</label><br>
+        <input type="file" name="pic" id="pic">
+        <br><br>
+        <label for="gdr">Gender:</label><br>
+        <input type="radio" name="gdr" id="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gdr" id="female">
+        <label for="female">Female</label>
+        <input type="radio" name="gdr" id="Others">
+        <label for="Others">Others</label>
+        <br><br>
+        <label for="qu">Qualification:</label><br>
+        <input type="checkbox" name="qu" id="hs">
+        <label for="hs">HS</label>
+        <input type="checkbox" name="qu" id="ug">
+        <label for="ug">UG</label>
+        <input type="checkbox" name="qu" id="pg">
+        <label for="pg">PG</label>
+        <br><br>
+        <label for="rgn">Religion:</label><br>
+        <input list="Religion" name = "rgn" id="rgn">
+        <datalist class="valu" name="Religion" id="Religion">
+            <option value="Hindu">Hindu</option>
+            <option value="Muslim">Muslim</option>
+            <option value="Christian">Christian</option>
+            <option value="Hindu">Hindu</option>
+            <option value="Muslim">Muslim</option>
+            <option value="Christian">Christian</option>
+        </datalist>
+        <br><br>
+        <label for="addr">Adderss:</label><br>
+        <textarea name="addr" id="addr" cols="28" rows="10"></textarea>
+        <br><br>
+        <input style="width: 110px;" type="submit" value="Submit">
+        <input style="width: 110px;" type="reset" value="Clear">
+
+    </form>
+</body>
