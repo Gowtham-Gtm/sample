@@ -1,0 +1,37 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+    
+.container{
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    padding:50px 10px;
+    padding-top: 20%;
+}
+.container h1{
+    font-size: 60px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.container p{
+    font-size: 20px;
+    position: relative;
+}
+   
+.container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.centurybizsolutions.net/wp-content/uploads/2016/01/Banner-Buildings-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
